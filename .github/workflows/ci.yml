@@ -10,4 +10,5 @@ jobs:
       - run: cargo build
       - run: cargo test
       - run: docker build -t perfreport .
-  
+      - run: cargo run
+      - run: docker run --rm perfreport
